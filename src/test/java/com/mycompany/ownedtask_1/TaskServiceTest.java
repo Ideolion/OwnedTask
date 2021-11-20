@@ -52,12 +52,16 @@ public class TaskServiceTest {
 
         TaskService instance = new TaskService();
 
-        ArrayList<Object> expResult = objectsList;
-        expResult.get(1).setSubjectName(3);
-        expResult.get(2).setSubjectName(1);
-        expResult.get(3).setSubjectName(2);
-        expResult.get(4).setSubjectName(2);
-
+        ArrayList<Object> expResult = new ArrayList<Object>();
+        expResult.add(0, new Object(1, 0));
+        expResult.add(1, new Object(2, 3));
+        expResult.add(2, new Object(3, 1));
+        expResult.add(3, new Object(4, 2));
+        expResult.add(4, new Object(5, 2));
+        expResult.add(5, new Object(6, 0));
+        expResult.add(6, new Object(7, 0));
+        expResult.add(7, new Object(8, 0));
+    
         ArrayList<Object> result = instance.AllocationNormPrioritySubjects(objectsList, subjectsList);
         for (int i = 0; i < expResult.size(); i++) {
             assertEquals(expResult.get(i).subjectName, result.get(i).subjectName);
@@ -98,14 +102,22 @@ public class TaskServiceTest {
 
         TaskService instance = new TaskService();
 
-        ArrayList<Object> expResult = objectsList;
-        expResult.get(6).setSubjectName(4);
+        ArrayList<Object> expResult = new ArrayList<Object>();
+        expResult.add(0, new Object(1, 0));
+        expResult.add(1, new Object(2, 3));
+        expResult.add(2, new Object(3, 1));
+        expResult.add(3, new Object(4, 2));
+        expResult.add(4, new Object(5, 2));
+        expResult.add(5, new Object(6, 0));
+        expResult.add(6, new Object(7, 0));
+        expResult.add(7, new Object(8, 5));
 
         ArrayList<Object> result = instance.AllocationLoPrioritySubjects(objectsList, subjectsList);
 
         for (int i = 0; i < expResult.size(); i++) {
             assertEquals(expResult.get(i).subjectName, result.get(i).subjectName);
         }
+      
         System.out.println("expResult: ");
         for (int i = 0; i < expResult.size(); i++) {
             System.out.print(expResult.get(i).objectName + " " + expResult.get(i).subjectName + " | ");
@@ -141,7 +153,15 @@ public class TaskServiceTest {
 
         TaskService instance = new TaskService();
 
-        ArrayList<Object> expResult = objectsList;
+        ArrayList<Object> expResult = new ArrayList<Object>();
+        expResult.add(0, new Object(1, 0));
+        expResult.add(1, new Object(2, 3));
+        expResult.add(2, new Object(3, 1));
+        expResult.add(3, new Object(4, 2));
+        expResult.add(4, new Object(5, 2));
+        expResult.add(5, new Object(6, 0));
+        expResult.add(6, new Object(7, 4));
+        expResult.add(7, new Object(8, 5));
 
         ArrayList<Object> result = instance.AllocationAvoidanceSubjects(objectsList, subjectsList);
 
@@ -183,9 +203,15 @@ public class TaskServiceTest {
 
         TaskService instance = new TaskService();
 
-        ArrayList<Object> expResult = objectsList;
-        objectsList.get(3).setSubjectName(0);
-        objectsList.get(4).setSubjectName(0);
+         ArrayList<Object> expResult = new ArrayList<Object>();
+        expResult.add(0, new Object(1, 0));
+        expResult.add(1, new Object(2, 3));
+        expResult.add(2, new Object(3, 1));
+        expResult.add(3, new Object(4, 0));
+        expResult.add(4, new Object(5, 0));
+        expResult.add(5, new Object(6, 0));
+        expResult.add(6, new Object(7, 4));
+        expResult.add(7, new Object(8, 5));
 
         ArrayList<Object> result = instance.AllocationDeletionSubjects(objectsList, subjectsList);
 

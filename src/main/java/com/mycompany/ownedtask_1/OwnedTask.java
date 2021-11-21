@@ -3,10 +3,10 @@ package com.mycompany.ownedtask_1;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author kiry
- */
+/** 
+ * Класс реализующий задачу распределения субъектов
+ * @author Денис Уфилин
+*/
 class OwnedTask {
     
     public static ArrayList<Object> OwnedTask(ArrayList<Object> objectsList, ArrayList<Subject> subjectsList) {

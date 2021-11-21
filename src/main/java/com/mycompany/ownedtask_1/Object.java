@@ -3,8 +3,7 @@ package com.mycompany.ownedtask_1;
 
 /** 
  * Класс объект,может принадлежать только одному из субъектов
- * @autor Денис Уфилин
- * @version 0_о
+ * @author Денис Уфилин
 */
 public class Object {
     /** Поле имя объекта, */ 

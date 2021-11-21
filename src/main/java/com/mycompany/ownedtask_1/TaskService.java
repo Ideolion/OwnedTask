@@ -6,10 +6,10 @@ package com.mycompany.ownedtask_1;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author kiry
- */
+/** 
+ * Класс объект,может принадлежать только одному из субъектов
+ * @author Денис Уфилин
+*/
 public class TaskService implements InterfaceTaskService {
 
     @Override

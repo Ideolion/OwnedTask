@@ -4,7 +4,7 @@ package com.mycompany.ownedtask_1;
  * Класс субъект,может быть способным владеть некоторым подмножеством из
  * объектов
  *
- * @autor Денис Уфилин
+ * @author Денис Уфилин
  */
 public class Subject {
 

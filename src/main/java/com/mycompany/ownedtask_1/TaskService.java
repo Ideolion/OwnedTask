@@ -7,7 +7,7 @@ package com.mycompany.ownedtask_1;
 import java.util.ArrayList;
 
 /** 
- * Класс объект,может принадлежать только одному из субъектов
+ * Класс TaskService определяет методы распределения, исходя из свойств субъектов
  * @author Денис Уфилин
 */
 public class TaskService implements InterfaceTaskService {

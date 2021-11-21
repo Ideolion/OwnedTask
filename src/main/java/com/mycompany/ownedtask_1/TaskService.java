@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.ownedtask_1;
 
 import java.util.ArrayList;
 
 /** 
- * Класс TaskService определяет методы распределения, исходя из свойств субъектов
+ * Класс TaskService переопределяет методы распределения, исходя из свойств субъектов
  * @author Денис Уфилин
 */
 public class TaskService implements InterfaceTaskService {
